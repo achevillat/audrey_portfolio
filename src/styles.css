@@ -1,6 +1,7 @@
 :root {
   --primary-color: #556778;
   --secondary-color: #ddd949;
+  --tertiary-color: #a2d9dd;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 body {
@@ -95,4 +96,11 @@ h1.developer {
 h3.title {
   font-size: 50px;
   font-weight: 700;
+}
+.bg-color {
+  background-color: var(--tertiary-color);
+}
+.sample-img {
+  vertical-align: middle;
+  margin: 15px auto;
 }
