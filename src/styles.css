@@ -1,40 +1,59 @@
-/*font-family: 'Jura', sans-serif;
-font-family: 'Spinnaker', sans-serif;*/
+body {
+  font-family: "Jura", sans-serif;
+}
 
+h1 {
+  font-family: "Spinnaker", sans-serif;
+  font-size: 96px;
+}
+h2 {
+  font-family: "Jura", sans-serif;
+  font-size: 48px;
+}
+h3 {
+  font-family: "Jura", sans-serif;
+}
+
+.intro {
+  height: 600px;
+  /*background: url(/images/Icon\ big.png) no-repeat center;*/
+}
+.dev {
+  background-color: #556778;
+}
 .design {
-  width: 70%;
-  height: 100%;
+  background-color: #fff;
 }
-.container {
-  display: flex;
-  width: 900px;
-  height: 800px;
-  flex-direction: row;
+.designer {
+  text-align: right;
+  color: #556778;
 }
-.design__background {
-  /* margin-left: 150px;*/
-  position: absolute;
-  z-index: -10;
+.developer {
+  text-align: left;
+  color: #fff;
 }
-
-.skew {
-  display: block;
-  position: relative;
-  background: #556778;
-  height: 100%;
-  width: 50%;
+h3.designer,
+h3.developer {
+  font-size: 50px;
+  margin-top: 50px;
 }
-.skew:after {
-  position: absolute;
-  content: "";
-  background: inherit;
-  z-index: -1;
+h2.designer,
+h2.developer {
+  font-size: 70px;
+  margin-top: 10px;
 }
-.skew.dev:after {
-  height: 100%;
-  width: 100%;
-  top: 0px;
-  left: 0px;
-  transform-origin: top left;
-  transform: skewX(-15deg);
+h1.designer,
+h1.developer {
+  font-size: 45px;
+  margin-top: 10px;
+}
+#pencil {
+  font-size: 150px;
+  text-align: center;
+  color: #556778;
+}
+#code {
+  font-size: 150px;
+  text-align: center;
+  color: #fff;
 }
