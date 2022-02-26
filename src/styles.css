@@ -1,3 +1,8 @@
+:root {
+  --primary-color: #556778;
+  --secondary-color: #ddd949;
+  --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
 body {
   font-family: "Jura", sans-serif;
 }
@@ -12,6 +17,10 @@ h2 {
 }
 h3 {
   font-family: "Jura", sans-serif;
+  text-align: center;
+}
+p {
+  font-size: 18px;
 }
 
 .intro {
@@ -27,15 +36,18 @@ h3 {
 .designer {
   text-align: right;
   color: #556778;
+  padding-right: 20px;
 }
 .developer {
   text-align: left;
   color: #fff;
+  padding-left: 20px;
 }
 h3.designer,
 h3.developer {
-  font-size: 50px;
-  margin-top: 50px;
+  font-size: 70px;
+  margin-top: 250px;
+  font-weight: 700;
 }
 h2.designer,
 h2.developer {
@@ -47,13 +59,40 @@ h1.developer {
   font-size: 45px;
   margin-top: 10px;
 }
-#pencil {
-  font-size: 150px;
-  text-align: center;
-  color: #556778;
+.logo-intro {
+  margin-top: 50px;
+  height: 150px;
+  float: right;
+  padding-right: 0;
 }
-#code {
-  font-size: 150px;
-  text-align: center;
-  color: #fff;
+.logo-intro-2 {
+  margin-top: 50px;
+  height: 150px;
+  float: left;
+  padding-left: 0;
+}
+.contact-link {
+  background: var(--secondary-color);
+  box-shadow: var(--box-shadow);
+  color: var(--primary-color);
+  font-size: 20px;
+  font-weight: 600;
+}
+.contact-button a {
+  margin: 10px;
+  border-radius: 4px;
+  padding: 15px 60px;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+.contact-button {
+  display: flex;
+  justify-content: center;
+}
+.title {
+  margin: 30px auto;
+}
+h3.title {
+  font-size: 50px;
+  font-weight: 700;
 }
