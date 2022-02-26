@@ -1,4 +1,40 @@
 /*font-family: 'Jura', sans-serif;
-/*font-family: 'Spinnaker', sans-serif;
+font-family: 'Spinnaker', sans-serif;*/
 
+.design {
+  width: 70%;
+  height: 100%;
+}
+.container {
+  display: flex;
+  width: 900px;
+  height: 800px;
+  flex-direction: row;
+}
+.design__background {
+  /* margin-left: 150px;*/
+  position: absolute;
+  z-index: -10;
+}
 
+.skew {
+  display: block;
+  position: relative;
+  background: #556778;
+  height: 100%;
+  width: 50%;
+}
+.skew:after {
+  position: absolute;
+  content: "";
+  background: inherit;
+  z-index: -1;
+}
+.skew.dev:after {
+  height: 100%;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  transform-origin: top left;
+  transform: skewX(-15deg);
+}
