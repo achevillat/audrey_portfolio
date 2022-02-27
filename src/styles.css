@@ -13,7 +13,7 @@ h1 {
   font-size: 96px;
 }
 h2 {
-  font-family: "Jura", sans-serif;
+  font-family: "Spinnaker", sans-serif;
   font-size: 48px;
 }
 h3 {
@@ -25,7 +25,7 @@ p {
 }
 
 .intro {
-  height: 600px;
+  height: 800px;
   /*background: url(/images/Icon\ big.png) no-repeat center;*/
 }
 .dev {
@@ -36,6 +36,7 @@ p {
 }
 .designer {
   text-align: right;
+
   color: #556778;
   padding-right: 20px;
 }
@@ -53,7 +54,7 @@ h3.developer {
 h2.designer,
 h2.developer {
   font-size: 70px;
-  margin-top: 10px;
+  margin-top: 120px;
 }
 h1.designer,
 h1.developer {
@@ -97,10 +98,133 @@ h3.title {
   font-size: 50px;
   font-weight: 700;
 }
-.bg-color {
-  background-color: var(--tertiary-color);
+.web-dev,
+.print-dev {
+  display: block;
+  margin: 10px auto;
+  width: 70%;
+  height: 400px;
 }
-.sample-img {
-  vertical-align: middle;
-  margin: 15px auto;
+.web-dev {
+  background-color: rgba(221, 217, 73, 0.8);
+}
+.print-dev {
+  background-color: rgba(128, 214, 208, 0.8);
+}
+.bg-color {
+  max-width: 600px;
+  max-height: 300px;
+}
+.container {
+  display: inline;
+  /*margin-top: 55px;*/
+  padding: 20px;
+  float: left;
+  background-color: #f1f1f1;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+h1.work-type {
+  font-size: 30px;
+  font-weight: 600;
+  margin-left: 10px;
+  margin-top: 20px;
+  /*transform: rotate(-90deg);
+  margin-left: -350px;
+  margin-top: -80px;*/
+}
+.work-title {
+  font-size: 20px;
+  font-weight: 500;
+  margin-left: 30px;
+  /*transform: rotate(-90deg);
+  margin-left: -250px;
+  margin-top: 0px;*/
+}
+p.work-desc {
+  margin-top: 40px;
+  margin-left: 50px;
+  font-size: 16px;
+}
+
+@media (max-width: 720px) {
+  h3.designer,
+  h3.developer {
+    font-size: 30px;
+    margin-top: 180px;
+    font-weight: 700;
+  }
+  .intro {
+    height: 500px;
+  }
+  h2.designer,
+  h2.developer {
+    font-size: 50px;
+    margin-top: 30px;
+  }
+  h1.designer,
+  h1.developer {
+    font-size: 38px;
+    margin-top: 10px;
+  }
+  .developer {
+    padding-left: 10px;
+  }
+  .designer {
+    padding-right: 10px;
+  }
+  .logo-intro {
+    margin-top: 40px;
+    height: 100px;
+  }
+  .logo-intro-2 {
+    margin-top: 40px;
+    height: 100px;
+  }
+  p {
+    font-size: 14px;
+  }
+  .contact-link {
+    font-size: 15px;
+  }
+  .contact-button a {
+    padding: 15px 30px;
+  }
+
+  h3.title {
+    font-size: 35px;
+    font-weight: 700;
+  }
+  .web-dev {
+    width: 100%;
+    height: 350px;
+  }
+  .print-dev {
+    width: 100%;
+    height: 350px;
+  }
+
+  h1.work-type {
+    font-size: 18px;
+    margin-left: 10px;
+    margin-top: 10px;
+    /*transform: rotate(-90deg);*/
+  }
+  .work-title {
+    font-size: 16px;
+    margin-left: 30px;
+    /*transform: rotate(-90deg);*/
+  }
+  p.work-desc {
+    font-size: 12px;
+    margin-top: 0;
+    margin-left: 40px;
+  }
+  .container {
+    margin: 10px 0 0 0;
+
+    padding: 10px;
+  }
 }
