@@ -99,7 +99,8 @@ h3.title {
   font-weight: 700;
 }
 .web-dev,
-.print-dev {
+.print-dev,
+.brand-dev {
   display: block;
   margin: 10px auto;
   width: 70%;
@@ -111,6 +112,10 @@ h3.title {
 .print-dev {
   background-color: rgba(128, 214, 208, 0.8);
 }
+.brand-dev {
+  background-color: rgba(205, 69, 137, 0.8);
+}
+
 .bg-color {
   width: 100%;
   max-height: 350px;
@@ -129,6 +134,39 @@ h3.title {
 .sample-img {
   height: auto;
   max-width: 100%;
+}
+.about-box {
+  display: block;
+  margin: 10px auto;
+  width: 80%;
+  height: 500px;
+  background-color: white;
+}
+p.bio {
+  font-size: 16px;
+  text-align: justify;
+}
+p.bio-highlight {
+  font-size: 18px;
+  font-weight: bold;
+}
+.profile {
+  max-height: 250px;
+}
+.bio-title {
+  font-size: 25px;
+  font-weight: bold;
+}
+.bio-container {
+  margin: 15x;
+  padding: 20px;
+  float: center;
+  background-color: #f1f1f1;
+  position: relative;
+  top: 50%;
+  transform: translateY(-60%);
+  display: flex;
+  justify-content: center;
 }
 
 h1.work-type {
