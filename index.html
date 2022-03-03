@@ -22,31 +22,45 @@
 <link href="https://fonts.googleapis.com/css2?family=Spinnaker&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <meta name="viewport" content="width-device-width, initial-scale=1.0">
-    </head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+  var num = 200; //number of pixels before modifying styles
+
+    $(window).bind("scroll", function () {
+      if ($(window).scrollTop() > num) {
+        $(".menu").addClass("fixed");
+      } else {
+        $(".menu").removeClass("fixed");
+      }
+    });
+  
+  $(function () {
+    $(".toggle").on("click", function(){
+      if($(".item").hasClass("active")){
+       $(".item").removeClass("active"); 
+      }
+      else{
+        $(".item").addClass("active");
+      }
+    })
+  });
+  
+</script>    
+</head>
 
 <body>
- <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-    <div class="container-fluid">
-      <a class="logo" href="#">Audrey Chevillat</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="about.html">About me</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="about.html#contact">Contact me</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav> 
+<nav> 
+  <ul class="menu">
+<li class="logo"> <a href="index.html"><img src="/images/Creafix logo white simple.png" alt="creafix design logo" width="150"/></a></li>
+<li class="item"> <a href="index.html#about">About</a></li>
+<li class="item"> <a href="index.html#work">Work</a></li>
+<li class="item"> <a href="index.html#contact">Contact</a></li>
+<li class="toggle"> <span class="bars"></span></li>
+
+
+  </ul>
+  </nav>
+
 <div class="container-fluid">
   <div class="row mt-5 g-0 intro">
     <div class="col-6 px-0 design">
@@ -64,15 +78,15 @@
   <p class="developer">Experienced front end coder of responsive websites and web apps</p>
 </div>
   </div>
-<div class="row mt-2 g-0">
-  <div class="col-12  contact-button">
-  <a href="#" class="contact-link">Get in touch</a> <!--about.html#contact-->
-    </div>
-    </div>
+  <div class="row mt-2 g-0">
+    <div class="col-12  contact-button">
+    <a href="index.html#contact" class="contact-link">Get in touch</a> 
+      </div>
+      </div>
 </div>
 
-<div class="top-line-title"></div>
-<div class="title">
+<div class="top-line-title" id="about"></div>
+<div class="title" >
   <h3 class="title">About me</h3>
 </div>
 <div class="bottom-line-title"></div>
@@ -111,8 +125,13 @@
     </div>
   </div>
 </div>
-<div class="top-line-title"></div>
-<div class="title"> <h3 class="title">Projects highlights</h3></div>
+<div class="row mt-2 g-0">
+  <div class="col-12  contact-button">
+    <a href="index.html#contact" class="contact-link">Work with me</a>
+  </div>
+</div>
+<div class="top-line-title" id="work"></div>
+<div class="title" > <h3 class="title">Projects highlights</h3></div>
 <div class="bottom-line-title"></div>
 <div class="container-fluid ">
   <div class="web-dev">
@@ -252,6 +271,23 @@
   </div>
 </div>
 
+<div class="top-line-title" id="contact"></div>
+<div class="title">
+  <h3 class="title">Contact me</h3>
+</div>
+<div class="bottom-line-title"></div>
+<div>
+  <a href="mailto:hello@creafixdesign.com" class="email-link"> hello@creafixdesign.com </a>
+</div>
+
+
+
+
+
+
 </body>
+<footer>
+  <p> Terms and conditions</p>
+</footer>
 
 </html>

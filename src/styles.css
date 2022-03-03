@@ -23,6 +23,116 @@ h3 {
 p {
   font-size: 18px;
 }
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+nav {
+  background: #cd4589;
+  padding: 5px 20px;
+}
+ul {
+  list-style-type: none;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+}
+nav a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.menu li {
+  font-size: 18px;
+  padding: 15px 5px;
+}
+.menu li a {
+  display: block;
+}
+
+.logo a {
+  font-size: 20px;
+}
+
+/* mobile menu*/
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.item {
+  width: 100%;
+  text-align: center;
+  display: none;
+}
+.item.active {
+  display: block;
+}
+.toggle {
+  cursor: pointer;
+}
+.logo {
+  order: 1;
+  text-align: right;
+}
+.bars {
+  background: white;
+  display: inline-block;
+  height: 2px;
+  position: relative;
+  width: 18px;
+  order: 0;
+}
+.bars::before,
+.bars::after {
+  background: white;
+  content: "";
+  display: inline-block;
+  height: 2px;
+  position: absolute;
+  width: 18px;
+}
+.bars::before {
+  top: 5px;
+}
+.bars::after {
+  top: -5px;
+}
+
+/* tablet menu*/
+@media all and (min-width: 468px) {
+  .menu {
+    justify-content: center;
+  }
+  .logo {
+    flex: 1;
+  }
+}
+/* desktop menu*/
+@media all and (min-width: 768px) {
+  .item {
+    display: block;
+    width: auto;
+  }
+  .toggle {
+    display: none;
+  }
+  .logo {
+    order: 1;
+    display: block;
+    text-align: right;
+  }
+  .item {
+    order: 0;
+  }
+  .menu li {
+    padding: 15px 10px;
+  }
+}
 
 .intro {
   height: 800px;
@@ -205,6 +315,23 @@ p.work-desc {
   width: 100%;
   background-color: #cd4589;
   margin-bottom: 20px;
+}
+.email-link {
+  display: block;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+  color: #556778;
+  text-decoration: none;
+}
+.email-link:hover {
+  text-decoration: none;
+  color: #a2d9dd;
+}
+
+footer {
+  margin: 100px auto;
+  background: #a2d9dd;
 }
 
 @media (max-width: 720px) {
