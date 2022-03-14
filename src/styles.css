@@ -24,6 +24,10 @@ h4 {
   font-family: "Jura", sans-serif;
   font-size: 45px;
 }
+h5 {
+  font-family: "Jura", sans-serif;
+  font-size: 35px;
+}
 p {
   font-size: 18px;
 }
@@ -343,40 +347,58 @@ footer {
   border-radius: 50%;
   color: #fff;
 }
-.tools {
-  display: inline-block;
+.accordion {
+  width: 90%;
+  max-width: 1000px;
+  margin: 20px auto;
 }
-
-.card {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  min-width: 0;
-  word-wrap: break-word;
+.accordion-item {
   background-color: #fff;
-  background-clip: border-box;
-  border: 1px solid rgba(0, 0, 0, 0.125);
-  border-radius: 0.25rem;
+  color: black;
+  margin: 10px 0;
+  border-radius: 2px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
 }
-
-.collapse.show {
+.accordion-item-header {
+  padding: 0.5rem 3rem 0.5rem 1rem;
+  min-height: 3.5rem;
+  line-height: 1.25rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+.accordion-item-header::after {
+  content: "\002B";
+  font-size: 35px;
+  position: absolute;
+  right: 1rem;
+  margin-bottom: 0.5rem;
+}
+.accordion-item-header.active::after {
+  content: "\2212";
+}
+.accordion-item-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+.accordion-item-body-content {
+  padding: 1rem;
+  line-height: 1.5rem;
+  border-top: 1px solid;
+  border-image: linear-gradient(to right, #556778, transparent) 1;
+}
+.tools {
+  padding: 20px 20px;
+}
+.technology {
   display: block;
-}
-.collapse {
-  display: none;
+  text-align: center;
+  font-size: 80%;
 }
 
-.card-body {
-  -webkit-box-flex: 1;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-  padding: 1.25rem;
-}
 @media (max-width: 768px) {
   h1.designer,
   h1.developer {
