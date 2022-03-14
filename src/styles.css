@@ -398,6 +398,11 @@ footer {
   text-align: center;
   font-size: 80%;
 }
+.img-tech {
+  display: block;
+  margin: 0 auto;
+  width: 25% !important;
+}
 
 @media (max-width: 768px) {
   h1.designer,
@@ -494,6 +499,11 @@ footer {
     font-size: 16px;
     font-weight: bold;
   }
+  .img-tech {
+    display: block;
+    margin: 0 auto;
+    width: 35% !important;
+  }
 }
 @media (max-width: 570px) {
   .web-dev {
@@ -531,5 +541,13 @@ footer {
     width: 85%;
 
     background-color: white;
+  }
+  h4.accordion {
+    font-size: 18px;
+  }
+  .img-tech {
+    display: block;
+    margin: 0 auto;
+    width: 55% !important;
   }
 }
