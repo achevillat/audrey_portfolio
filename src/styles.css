@@ -154,7 +154,7 @@ nav a:hover {
 }
 .designer {
   text-align: right;
-
+  font-family: "Jura", sans-serif;
   color: #556778;
   padding-right: 20px;
 }
@@ -162,6 +162,7 @@ nav a:hover {
   text-align: left;
   color: #fff;
   padding-left: 20px;
+  font-family: "Jura", sans-serif;
 }
 h1.designer,
 h1.developer {
@@ -226,6 +227,7 @@ h1.title {
   display: block;
   margin: 10px auto;
   width: 70%;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
 }
 .web-dev {
   background-color: rgba(221, 217, 73, 0.6);
@@ -251,10 +253,12 @@ h1.title {
 p.bio {
   font-size: 16px;
   text-align: justify;
+  font-family: "Jura", sans-serif;
 }
 p.bio-highlight {
   font-size: 18px;
   font-weight: bold;
+  font-family: "Jura", sans-serif;
 }
 .profile {
   max-height: 250px;
@@ -297,6 +301,7 @@ p.work-desc {
   margin-top: 40px;
   margin-left: 50px;
   font-size: 16px;
+  font-family: "Jura", sans-serif;
 }
 
 .top-line-title {
@@ -320,6 +325,7 @@ p.work-desc {
   text-align: center;
   color: #556778;
   text-decoration: none;
+  font-family: "Jura", sans-serif;
 }
 .email-link:hover {
   text-decoration: none;
@@ -355,7 +361,7 @@ footer {
 .accordion-item {
   background-color: #fff;
   color: black;
-  margin: 10px 0;
+  margin: 20px 0;
   border-radius: 2px;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
 }
@@ -389,6 +395,8 @@ footer {
   line-height: 1.5rem;
   border-top: 1px solid;
   border-image: linear-gradient(to right, #556778, transparent) 1;
+  font-size: 16px;
+  font-family: "Jura", sans-serif;
 }
 .tools {
   padding: 20px 20px;
@@ -402,6 +410,10 @@ footer {
   display: block;
   margin: 0 auto;
   width: 25% !important;
+}
+.service-intro {
+  font-size: 16px;
+  font-family: "Jura", sans-serif;
 }
 
 @media (max-width: 768px) {
@@ -504,6 +516,15 @@ footer {
     margin: 0 auto;
     width: 35% !important;
   }
+  h4.accordion-item-header {
+    font-size: 30px;
+  }
+  .accordion-item-body-content {
+    font-size: 16px;
+  }
+  .service-intro {
+    font-size: 16px;
+  }
 }
 @media (max-width: 570px) {
   .web-dev {
@@ -542,12 +563,19 @@ footer {
 
     background-color: white;
   }
-  h4.accordion {
-    font-size: 18px;
-  }
+
   .img-tech {
     display: block;
     margin: 0 auto;
     width: 55% !important;
+  }
+  h4.accordion-item-header {
+    font-size: 20px;
+  }
+  .accordion-item-body-content {
+    font-size: 14px;
+  }
+  .service-intro {
+    font-size: 14px;
   }
 }
