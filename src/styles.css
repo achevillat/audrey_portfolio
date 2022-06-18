@@ -29,7 +29,9 @@ h5 {
   font-size: 35px;
 }
 p {
-  font-size: 18px;
+  font-size: 16px;
+  text-align: justify;
+  font-family: "Jura", sans-serif;
 }
 * {
   box-sizing: border-box;
@@ -42,6 +44,7 @@ nav {
 }
 ul {
   list-style-type: none;
+  font-family: "Jura", sans-serif;
 }
 nav a {
   color: white;
@@ -328,24 +331,39 @@ p.work-desc {
 }
 .email-link {
   display: block;
-  font-size: 22px;
-  font-weight: bold;
-  text-align: center;
-  color: #556778;
+
+  color: white;
   text-decoration: none;
-  font-family: "Jura", sans-serif;
 }
 .email-link:hover {
-  text-decoration: none;
-  color: black;
+  text-decoration: underline;
+  color: white;
 }
-
+.email-footer {
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: left;
+  color: white;
+  font-family: "Jura", sans-serif;
+}
 footer {
-  margin: 80px auto;
-  padding: 100px;
+  margin: 15px auto;
+  padding: 15px;
   background: #cd4589;
 }
 
+#terms {
+  text-align: center;
+  color: white;
+}
+#terms a {
+  text-decoration: none;
+  color: white;
+}
+#terms a:hover {
+  text-decoration: underline;
+}
 .social-links a {
   margin: 0 30px;
   color: var(--primary-color);
@@ -586,4 +604,32 @@ footer {
   .service-intro {
     font-size: 14px;
   }
+}
+.creative-services {
+  background-color: #556778;
+  color: white;
+  font-size: 26px;
+  padding: 80px;
+  margin: 0 auto;
+  min-width: 100%;
+  font-family: "Jura", sans-serif;
+  font-weight: bold;
+}
+
+.creative-services a {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+}
+.creative-services a:hover {
+  text-decoration: underline;
+  color: white;
+}
+.service-icon {
+  float: right;
+  margin-top: 0 auto;
+}
+.service-image {
+  display: block;
+  max-height: 80%;
 }
