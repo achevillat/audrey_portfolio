@@ -17,8 +17,8 @@ h2 {
   font-size: 48px;
 }
 h1 {
-  font-family: "Jura", sans-serif;
-  text-align: center;
+  font-family: "Spinnaker", sans-serif;
+  text-align: left;
 }
 h4 {
   font-family: "Jura", sans-serif;
@@ -175,22 +175,7 @@ nav a:hover {
   padding-left: 20px;
   font-family: "Jura", sans-serif;
 }
-h1.designer,
-h1.developer {
-  font-size: 70px;
-  margin-top: 250px;
-  font-weight: 700;
-}
-h2.designer,
-h2.developer {
-  font-size: 70px;
-  margin-top: 120px;
-}
-h3.designer,
-h3.developer {
-  font-size: 45px;
-  margin-top: 10px;
-}
+
 .logo-intro {
   margin-top: 50px;
   height: 150px;
@@ -223,10 +208,11 @@ h3.developer {
 
 .contact-button {
   display: flex;
-  justify-content: center;
+  justify-content: left;
 }
 .title {
   margin: 30px auto;
+  padding-left: 80px;
 }
 h1.title {
   font-size: 40px;
@@ -265,6 +251,7 @@ p.bio {
   font-size: 16px;
   text-align: justify;
   font-family: "Jura", sans-serif;
+  font-weight: 600;
 }
 p.bio-highlight {
   font-size: 18px;
@@ -632,4 +619,39 @@ footer {
 .service-image {
   display: block;
   max-height: 80%;
+}
+.web-intro {
+  display: block;
+  padding-top: 40px;
+  padding-bottom: 10px;
+  color: black;
+}
+.website-title {
+  font-size: 50px;
+  text-align: center;
+  padding-top: 40px;
+}
+.intro-services {
+  background-color: #cd4589;
+  color: white;
+  font-size: 26px;
+  padding: 30px;
+  margin: 0 auto;
+  min-width: 100%;
+  font-family: "Jura", sans-serif;
+  font-weight: bold;
+}
+.intro-services a {
+  text-decoration: none;
+  color: white;
+  text-align: left;
+  display: block;
+  padding: 20px 10px;
+}
+.intro-services a:hover {
+  text-decoration: underline;
+  color: white;
+}
+.mascot {
+  max-height: 60%;
 }
