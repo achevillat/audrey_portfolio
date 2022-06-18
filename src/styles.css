@@ -67,6 +67,10 @@ nav a:hover {
   color: white;
   text-decoration: none;
 }
+#navbarDropdown:hover {
+  color: white;
+  text-decoration: underline;
+}
 
 /* mobile menu*/
 
@@ -338,8 +342,8 @@ p.work-desc {
 
 footer {
   margin: 80px auto;
-  padding: 10px;
-  background: #a2d9dd;
+  padding: 100px;
+  background: #cd4589;
 }
 
 .social-links a {
