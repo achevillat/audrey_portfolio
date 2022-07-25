@@ -22,7 +22,7 @@
 <meta name="google-site-verification" content="39lnsWINQ7fUCUBEt-z9HrU6ihBVxTcWLhC0KwOmPKc" />
 <script src="https://kit.fontawesome.com/b013160931.js" crossorigin="anonymous"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 <script>
   var num = 200; //number of pixels before modifying styles
 
@@ -98,7 +98,7 @@
     </li>
     <li class="item"> <a href="./../mywork.html" title="My Work">Work</a></li>
     <li class="item"> <a href="./../about.html" title="About">About</a></li>
-    <li class="item"> <a href="./../contact.html" title="Contact me">Contact</a></li>
+    <li class="item"> <a href="index.html#contact" title="Contact me">Contact</a></li>
     <li class="toggle"> <span class="bars"></span></li>
 
 
@@ -292,35 +292,35 @@ you reach your goals while you stay free to focus on what you do best.</p>
 </div>
 
 <div class="col-8">
-<form class="row g-3">
+<form class="row g-3" action="">
   <div class="col-md-6">
     <div class="form-floating mb-1">
-      <input type="text" class="form-control" id="validationDefault01 floatingInput" placeholder="Firstname" required>
+      <input type="text" name="firstname" class="form-control" id="validationDefault01 floatingInput" placeholder="Firstname" required>
       <label for="validationDefault01 floatingInput">First name</label>
   </div>
   </div>
   <div class="col-md-6">
     <div class="form-floating mb-1">
-      <input type="text" class="form-control" id="validationDefault02 floatingInput" placeholder="Lastname"required>
+      <input type="text" name="lastname" class="form-control" id="validationDefault02 floatingInput" placeholder="Lastname"required>
       <label for="validationDefault02 floatingInput">Last name</label>
     </div>
   </div>
   <div class="col-md-6">
     <div class="form-floating mb-1">
-      <input type="email" class="form-control" id="validationDefault03 floatingInput" placeholder="name@example.com"required>
+      <input type="email" name="email" class="form-control" id="validationDefault03 floatingInput" placeholder="name@example.com"required>
       <label for="validationDefault03 floatingInput">Email address</label>
     </div>
   </div>
   
   <div class="col-md-6">
   <div class="form-floating mb-1">
-    <input type="tel" class="form-control" id="floatingInput" placeholder="Phone">
+    <input type="tel" name="phone" class="form-control" id="floatingInput" placeholder="Phone">
     <label for="floatingInput">Phone</label>
   </div>
   </div>
   <div class="col-12">
     <div class="form-floating">
-      <textarea class="form-control" placeholder="Message" id="validationTextarea floatingTextarea" style="height: 150px" required></textarea>
+      <textarea class="form-control" name="message" placeholder="Message" id="validationTextarea floatingTextarea" style="height: 150px" required></textarea>
       <label for="validationTextarea floatingTextarea">Tell us what you're after.</label>
     </div>
   </div>
@@ -333,8 +333,10 @@ you reach your goals while you stay free to focus on what you do best.</p>
       </label>
     </div>
   </div>-->
+  <div class="g-recaptcha" data-sitekey="6Lel4Z4UAAAAAOa8LO1Q9mqKRUiMYl_00o5mXJrR">
+  </div>
   <div class="col-12">
-    <button type="submit" class="btn btn-primary">Get in touch</button>
+    <button type="submit" name="submit" class="btn btn-primary">Get in touch</button>
   </div>
 </form>
 </div>
