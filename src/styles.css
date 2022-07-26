@@ -706,3 +706,7 @@ footer {
   text-decoration: none;
   text-transform: capitalize;
 }
+.terms {
+  margin: 0 auto;
+  padding: 0 40px 0 40px;
+}
