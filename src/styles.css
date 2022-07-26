@@ -357,21 +357,7 @@ footer {
 #terms a:hover {
   text-decoration: underline;
 }
-.social-links a {
-  margin: 0 30px;
-  color: var(--primary-color);
-  padding: 10px 20px;
-  font-size: 35px;
-  background: #fff;
-  border-radius: 50%;
-  transition: all 80ms;
-}
-.social-links a :hover {
-  padding: 10px 20px;
-  background: var(--primary-color);
-  border-radius: 50%;
-  color: #fff;
-}
+
 .accordion {
   width: 90%;
   max-width: 1000px;
@@ -472,6 +458,9 @@ footer {
   p {
     font-size: 14px;
   }
+  li {
+    font-size: 14px;
+  }
   .contact-link {
     font-size: 15px;
   }
@@ -544,6 +533,19 @@ footer {
   .service-intro {
     font-size: 16px;
   }
+  .email-footer {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: left;
+    color: white;
+    font-family: "Jura", sans-serif;
+  }
+  .logofooter {
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+  }
 }
 @media (max-width: 570px) {
   .web-dev {
@@ -563,20 +565,19 @@ footer {
     margin-top: 0;
     margin-left: 40px;
   }
+  p {
+    font-size: 14px;
+  }
+  li {
+    font-size: 14px;
+  }
   h3.work-type {
     font-size: 18px;
   }
   .work-title {
     font-size: 16px;
   }
-  .social-links a {
-    margin: 0 10px;
-    color: var(--primary-color);
-    padding: 10px 16px;
-    font-size: 20px;
-    background: #fff;
-    border-radius: 50%;
-  }
+
   .about-box {
     width: 85%;
 
@@ -596,6 +597,9 @@ footer {
   }
   .service-intro {
     font-size: 14px;
+  }
+  .title {
+    font-size: 20px;
   }
 }
 .creative-services {
@@ -709,4 +713,7 @@ footer {
 .terms {
   margin: 0 auto;
   padding: 0 40px 0 40px;
+}
+.logofooter {
+  padding: 0 20px;
 }
