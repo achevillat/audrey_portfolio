@@ -569,6 +569,11 @@ justify-content: center;
 .logofooter {
   padding: 0 20px;
 }
+.ty{
+  text-align: center;
+}
+
+
 /*Media queries for small and medium screens*/
 @media (min-width: 992px){
 
