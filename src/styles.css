@@ -17,8 +17,8 @@ h2 {
   font-size: 48px;
 }
 h1 {
-  font-family: "Jura", sans-serif;
-  text-align: center;
+  font-family: "Spinnaker", sans-serif;
+  text-align: left;
 }
 h4 {
   font-family: "Jura", sans-serif;
@@ -29,7 +29,9 @@ h5 {
   font-size: 35px;
 }
 p {
-  font-size: 18px;
+  font-size: 16px;
+  text-align: justify;
+  font-family: "Jura", sans-serif;
 }
 * {
   box-sizing: border-box;
@@ -42,6 +44,7 @@ nav {
 }
 ul {
   list-style-type: none;
+  font-family: "Jura", sans-serif;
 }
 nav a {
   color: white;
@@ -51,7 +54,11 @@ nav a:hover {
   color: white;
   text-decoration: underline;
 }
-
+footer {
+  margin: 15px auto;
+  padding: 15px;
+  background: #cd4589;
+}
 .menu li {
   font-size: 18px;
   padding: 15px 5px;
@@ -62,6 +69,14 @@ nav a:hover {
 
 .logo a {
   font-size: 20px;
+}
+#navbarDropdown {
+  color: white;
+  text-decoration: none;
+}
+#navbarDropdown:hover {
+  color: white;
+  text-decoration: underline;
 }
 
 /* mobile menu*/
@@ -164,22 +179,7 @@ nav a:hover {
   padding-left: 20px;
   font-family: "Jura", sans-serif;
 }
-h1.designer,
-h1.developer {
-  font-size: 70px;
-  margin-top: 250px;
-  font-weight: 700;
-}
-h2.designer,
-h2.developer {
-  font-size: 70px;
-  margin-top: 120px;
-}
-h3.designer,
-h3.developer {
-  font-size: 45px;
-  margin-top: 10px;
-}
+
 .logo-intro {
   margin-top: 50px;
   height: 150px;
@@ -196,6 +196,7 @@ h3.developer {
   background: var(--secondary-color);
   box-shadow: var(--box-shadow);
   color: var(--primary-color);
+  border: none;
   font-size: 20px;
   font-weight: 600;
 }
@@ -206,16 +207,26 @@ h3.developer {
   text-decoration: none;
   text-transform: capitalize;
 }
+.contact-button button {
+  margin: 10px;
+  border-radius: 4px;
+  padding: 15px 60px;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
 .contact-link:hover {
   color: black;
 }
 
 .contact-button {
   display: flex;
-  justify-content: center;
+  justify-content: left;
+
 }
 .title {
   margin: 30px auto;
+  padding-left: 80px;
 }
 h1.title {
   font-size: 40px;
@@ -254,11 +265,18 @@ p.bio {
   font-size: 16px;
   text-align: justify;
   font-family: "Jura", sans-serif;
+  font-weight: 600;
 }
 p.bio-highlight {
   font-size: 18px;
   font-weight: bold;
   font-family: "Jura", sans-serif;
+}
+li.bio-list {
+  font-size: 16px;
+  text-align: justify;
+  font-family: "Jura", sans-serif;
+  font-weight: 600;
 }
 .profile {
   max-height: 250px;
@@ -300,6 +318,7 @@ h3.work-type {
 p.work-desc {
   margin-top: 40px;
   margin-left: 50px;
+  
   font-size: 16px;
   font-family: "Jura", sans-serif;
 }
@@ -320,39 +339,36 @@ p.work-desc {
 }
 .email-link {
   display: block;
-  font-size: 22px;
-  font-weight: bold;
-  text-align: center;
-  color: #556778;
+
+  color: white;
   text-decoration: none;
-  font-family: "Jura", sans-serif;
 }
 .email-link:hover {
+  text-decoration: underline;
+  color: white;
+}
+.email-footer {
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: left;
+  color: white;
+  font-family: "Jura", sans-serif;
+}
+
+
+#terms {
+  text-align: center;
+  color: white;
+}
+#terms a {
   text-decoration: none;
-  color: black;
+  color: white;
+}
+#terms a:hover {
+  text-decoration: underline;
 }
 
-footer {
-  margin: 80px auto;
-  padding: 10px;
-  background: #a2d9dd;
-}
-
-.social-links a {
-  margin: 0 30px;
-  color: var(--primary-color);
-  padding: 10px 20px;
-  font-size: 35px;
-  background: #fff;
-  border-radius: 50%;
-  transition: all 80ms;
-}
-.social-links a :hover {
-  padding: 10px 20px;
-  background: var(--primary-color);
-  border-radius: 50%;
-  color: #fff;
-}
 .accordion {
   width: 90%;
   max-width: 1000px;
@@ -416,6 +432,155 @@ footer {
   font-family: "Jura", sans-serif;
 }
 
+
+.creative-services {
+  background-color: #556778;
+  color: white;
+  font-size: 22px;
+  padding: 80px;
+  margin: 0 auto;
+  min-width: 100%;
+  font-family: "Jura", sans-serif;
+  font-weight: bold;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.creative-services a {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+}
+
+.creative-services a:hover {
+  text-decoration: underline;
+  color: white;
+}
+
+.service-icon {
+justify-content: center;
+  margin: 20px auto;
+}
+
+.service-image {
+  display: block;
+  max-height: 300px;
+}
+
+.web-intro {
+  display: block;
+  padding-top: 40px;
+  padding-bottom: 10px;
+  color: black;
+}
+
+.website-title {
+  font-size: 50px;
+  text-align: center;
+  padding-top: 40px;
+}
+
+.intro-services {
+  background-color: #cd4589;
+  color: white;
+  font-size: 22px;
+  padding: 30px;
+  margin: 0 auto;
+  min-width: 100%;
+  font-family: "Jura", sans-serif;
+  font-weight: bold;
+}
+
+.intro-services a {
+  text-decoration: none;
+  color: white;
+  text-align: left;
+  display: block;
+  padding: 20px 10px;
+}
+
+.intro-services a:hover {
+  text-decoration: underline;
+  color: white;
+}
+
+.mascot {
+  max-height: 350px;
+}
+
+.testimonials {
+  background-color: #ddd949;
+  padding: 30px;
+  margin: 0 auto;
+  min-width: 100%;
+}
+
+.testimonial-title {
+  text-align: center;
+}
+
+.testimonial-content {
+  background-color: #fff;
+  max-width: 80%;
+  margin: 10px auto;
+  padding: 20px;
+}
+
+.btn-primary,
+.btn-primary:active,
+.btn-primary:visited {
+  background: var(--secondary-color) !important;
+  box-shadow: var(--box-shadow) !important;
+  color: var(--primary-color) !important;
+  font-size: 20px !important;
+  font-weight: 600 !important;
+  padding: 15px 60px !important;
+  border-style: none !important;
+  font-family: "Jura", sans-serif !important;
+}
+
+.btn-primary:hover {
+  color: black !important;
+}
+
+.work-button {
+  border-radius: 4px;
+  padding: 15px 60px;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.work-button a {
+  display: flex;
+  justify-content: center;
+  margin: auto 10px;
+  border-radius: 4px;
+  padding: 15px 60px;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.terms {
+  margin: 0 auto;
+  padding: 0 40px 0 40px;
+}
+
+.logofooter {
+  padding: 0 20px;
+}
+.ty{
+  text-align: center;
+}
+
+
+/*Media queries for small and medium screens*/
+@media (min-width: 992px){
+
+
+
+}
+
 @media (max-width: 768px) {
   h1.designer,
   h1.developer {
@@ -453,17 +618,51 @@ footer {
   p {
     font-size: 14px;
   }
+  li {
+    font-size: 14px;
+  }
+  .title {
+      margin: 20px auto;
+      padding-left: 10px;
+    }
   .contact-link {
-    font-size: 15px;
+    font-size: 16px;
   }
   .contact-button a {
     padding: 15px 30px;
   }
-
+ .contact-button button {
+   padding: 15px 30px;
+ }
+ .contact-button {
+   display: flex;
+   justify-content: center;
+ }
+ .website-title {
+   font-size: 45px;
+   text-align: left;
+   padding-top: 10px;
+ }
   h1.title {
     font-size: 35px;
     font-weight: 700;
   }
+  p.bio-highlight {
+      font-size: 15px;
+    } 
+    p.bio {
+      font-size: 14px;
+      padding: 10px;
+    }
+li.bio-list {
+      font-size: 15px;
+  padding-right:10px;
+}
+.web-intro {
+  display: block;
+  padding: 40px 10px 10px 10px;
+
+}
   .web-dev {
     margin-bottom: 5px;
     width: 100%;
@@ -492,6 +691,7 @@ footer {
   p.work-desc {
     margin-top: 0;
     margin-left: 40px;
+    margin-right: 10px;
   }
 
   .bio-title {
@@ -504,12 +704,11 @@ footer {
     background-color: white;
   }
   p.bio {
-    font-size: 16px;
+    font-size: 15px;
     text-align: justify;
   }
   p.bio-highlight {
     font-size: 16px;
-    font-weight: bold;
   }
   .img-tech {
     display: block;
@@ -525,6 +724,42 @@ footer {
   .service-intro {
     font-size: 16px;
   }
+ .intro-services {  
+   font-size: 18px;  
+    }
+  .service-image {
+   display: block;
+   max-height: 300px;
+   margin: 0 auto;
+  }
+  .service-icon {
+  justify-content: center;
+  margin-top: 0;
+  max-height: 60px;
+  }
+
+.creative-services {
+   
+      font-size: 18px;
+    padding: 20px;
+    }
+  .email-footer {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+    color: white;
+    font-family: "Jura", sans-serif;
+  }
+  .logofooter {
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+    .mascot {
+        scale:60%;
+    }
 }
 @media (max-width: 570px) {
   .web-dev {
@@ -544,20 +779,19 @@ footer {
     margin-top: 0;
     margin-left: 40px;
   }
+  p {
+    font-size: 14px;
+  }
+  li {
+    font-size: 14px;
+  }
   h3.work-type {
     font-size: 18px;
   }
   .work-title {
     font-size: 16px;
   }
-  .social-links a {
-    margin: 0 10px;
-    color: var(--primary-color);
-    padding: 10px 16px;
-    font-size: 20px;
-    background: #fff;
-    border-radius: 50%;
-  }
+
   .about-box {
     width: 85%;
 
@@ -578,4 +812,24 @@ footer {
   .service-intro {
     font-size: 14px;
   }
-}
+ .intro-services {
+ font-size: 14px;
+     }
+  .service-icon {
+  justify-content: center;
+  margin-top: 0;
+  max-height: 40px;
+ }
+ .creative-services {
+
+   font-size: 14px;
+
+ }
+  .title {
+    font-size: 20px;
+  }
+  #terms{
+    font-size: 14px;
+  }
+   
+ }
