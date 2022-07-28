@@ -2,18 +2,15 @@
 <html>
 
 <head>
-  <title>Visual design and web development - Creafix Design
-  </title>
+  <title>Visual design, digital marketing and web development - Creafix Design </title>
   <meta charset="UTF-8" />
-  <meta name="description" content="Creafix Design is a web development and graphic design service provider based in New Zealand. I have experience building websites and e-commerce sites as well as developing brand identities and providing general graphic design services. " >
+  <meta name="description" content="Creafix Design is a web development, digital marketing and graphic design service provider based in New Zealand. We have experience building websites and e-commerce sites as well as developing brand identities and digital marketing services. " >
 <link rel="icon" href="images/Icon small-min.png">
   <link href="src/styles.css" rel="stylesheet" type="text/css" />
+  
   <!-- CSS only -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Jura:wght@500&display=swap" rel="stylesheet">
@@ -25,6 +22,7 @@
 <meta name="google-site-verification" content="39lnsWINQ7fUCUBEt-z9HrU6ihBVxTcWLhC0KwOmPKc" />
 <script src="https://kit.fontawesome.com/b013160931.js" crossorigin="anonymous"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 <script>
   var num = 200; //number of pixels before modifying styles
 
@@ -51,178 +49,331 @@
 </head>
 
 <body>
-<nav> 
+<nav>
   <ul class="menu" id="navbar">
-<li class="logo"> <a href="index.html" title="Homepage logo"><img src="/images/Creafix logo white simple.png" alt="creafix design logo" width="150"/></a></li>
-<li class="item"> <a href="index.html"title="Homepage">Home</a></li>
-<li class="item"> <a href="index.html#about"title="About">About</a></li>
-<li class="item"> <a href="mywork.html"title="My Work">Work</a></li>
-<li class="item"> <a href="services.html" title="Services">Services</a></li>
-<li class="item"> <a href="index.html#contact" title="Contact me">Contact</a></li>
-<li class="toggle"> <span class="bars"></span></li>
+    <li class="logo"> <a href="index.html" title="Homepage logo"><img src="/images/Creafix logo white simple.png"
+          alt="creafix design logo" width="150" /></a></li>
+    <li class="item"> <a href="./../index.html" title="Homepage">Home</a></li>
+
+    <li class="nav-item dropdown item">
+      <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+        aria-expanded="false">
+        Creative Services
+      </a>
+      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <li><a class="dropdown-item" href="./../creative_services/brandstrategy.html">Branding Strategy</a></li>
+        <li><a class="dropdown-item" href="./../creative_services/logodesign.html">Logo Design</a></li>
+        <li><a class="dropdown-item" href="./../creative_services/marketingcollateral.html">Marketing material and
+            collateral</a></li>
+        <li><a class="dropdown-item" href="./../creative_services/templates.html">Presentation and proposal template</a>
+        </li>
+      </ul>
+    </li>
+    <li class="nav-item dropdown item">
+      <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+        aria-expanded="false">
+        Digital Marketing
+      </a>
+      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <li><a class="dropdown-item" href="./../digital_marketing/digitalstrategy.html">Digital Marketing Strategy</a>
+        </li>
+        <li><a class="dropdown-item" href="./../digital_marketing/smmanagement.html">Social Media Management</a></li>
+        <li><a class="dropdown-item" href="./../digital_marketing/websitemarketing.html">Website Marketing</a>
+        </li>
+        <li><a class="dropdown-item" href="./../digital_marketing/emailmarketing.html">Email Marketing</a></li>
+      </ul>
+    </li>
+    <li class="nav-item dropdown item">
+      <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+        aria-expanded="false">
+        Web Development
+      </a>
+      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <li><a class="dropdown-item" href="./../web_development/webdesign.html">Web Design</a></li>
+        <li><a class="dropdown-item" href="./../web_development/seo.html">Search Engine Optimisation (SEO)</a></li>
+        <li><a class="dropdown-item" href="./../web_development/landingpages.html">Landing Pages</a>
+        </li>
+        <li><a class="dropdown-item" href="./../web_development/websiteaudit.html">Website Audit</a></li>
+      </ul>
+    </li>
+    <li class="item"> <a href="./../mywork.html" title="My Work">Work</a></li>
+    <li class="item"> <a href="./../about.html" title="About">About</a></li>
+    <li class="item"> <a href="index.html#contact" title="Contact me">Contact</a></li>
+    <li class="toggle"> <span class="bars"></span></li>
 
 
   </ul>
-  </nav>
+</nav>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-7 col-xs-12 designer align-self-center">
+      <h1 class="website-title">A complete marketing solution to everyday digital challenges</h1>
+<p class="bio-highlight web-intro">Is the day to day running of your business get in the way of updating or building your website? You know a well-built
+website with a solid digital marketing strategy would get you more customers. All this is daunting, complex and a lot of
+work. That's where I come in! <br>
 
-<div class="container-fluid">
-  <div class="row mt-5 g-0 intro">
-    <div class="col-6 px-0 design">
-<h2 class="designer ">Hey </h2>
-<h3 class="designer"> I am</h3>
-<p><img src="/images/Colour-half.png" alt="half logo colour" class="image-fluid logo-intro"/></p>
-<h1 class="designer">Designer</h1>
-<p class="designer">Experienced graphic designer, visual whiz and brand creator  </p>
+I help businesses improve the way they present themselves online and make digital tools work for them. I combine
+expertise on branding, digital marketing strategy, social media integration and website development to achieve visible
+results.<br>
+Providing these services in one package means that you only need to deal with one person, one invoice and benefit from
+no disconnect between the contractors managing your digital presence.<br>
+
+Each business is unique. Understanding your business objectives is the key to build a bespoke action plan that will help
+you reach your goals while you stay free to focus on what you do best.</p>
     </div>
-<div class="col-6 px-0 dev">
-  <h2 class="developer ">there! </h2>
-  <h3 class="developer"> Audrey</h3>
-<p><img src="/images/colour-other-half.png" alt=" second half logo colour" class="image-fluid logo-intro-2" /></p>
-  <h1 class="developer">Developer</h1>
-  <p class="developer">Experienced front end coder of responsive websites and web apps</p>
-</div>
-  </div>
-  <div class="row mt-2 g-0">
-    <div class="col-12  contact-button">
-    <a href="index.html#contact" class="contact-link" title="Contact me">Get in touch</a> 
+    
+    <div class="col-lg-5 mt-2 mb-2 col-xs-12 align-self-center">
+<div class="d-none d-md-block"><img src="images/Key offerings.png" alt="Creafix Mascot and 3 key offering: web development, creative design, digital marketing" class="img-fluid mx-auto d-block img-sample"></div>
+    </div>
+    <div class="row mt-2 g-0">
+      <div class="col-12  contact-button">
+        <a href="index.html#contact" class="contact-link" title="Get in touch">Get in touch</a>
       </div>
-      </div>
-</div>
-
-<div class="top-line-title" id="about"></div>
-<div class="title" >
-  <h1 class="title">About me</h1>
-</div>
-<div class="bottom-line-title"></div>
-<div class="container-fluid ">
-  <div class="about-box">
-    <h2 class="bio-title">Who am I?</h2>
-    <div class="row mt-2 mb-1 h-100">
-      <div class="col-md-5  ">
-         <div class="bio-container">
-          <img src="images/Photo Profile.jpg" alt="profile picture" class="img-fluid rounded profile"/>
-        </div>
-      </div>
-      <div class="col-md-7">     
-        <p class="bio-highlight mb-1">
-          French born engineer turned visual designer and front end developer who's happy to call New Zealand home.</p>
-        <p class="bio mb-1">
-          I am passionate about design and digital technologies; I love to know how things work (hello engineering brain!) but
-          also make things functional for users and pleasing to the eye (hello creative brain!). Being able to combine these two
-          sides of my brain has been a revelation and encouraged me to start Creafix Design.
-          The desire to help businesses create media that helps promote brands, products and information to their customers is the
-          foundation or "raison de vivre" of Creafix Design.😃</p><br/>
-          <p class="bio mb-1">
-          I have been working as a product designer for a number of years, focusing heavily on analysing problems and identifying
-          users needs.
-          This is the reason why I love getting to know my clients personally and being part of their projects or business ideas
-          as I believe it is the key to identifying the essence of their business and reaching out to their ideal audience.
-          </p> <br />
-          <p class="bio mb-1">
-          I'm happiest when I'm creating, learning, exploring and thinking about how to make things better. Currently, I am
-          available to take on new freelance work, feel free to reach out and say hello even if you haven't got a project in mind
-          yet!
-        </p><br />
-          <p class="bio mb-1">
-            I can help with creating beautiful functional websites, eye catching branding and graphics. Click below to learn more.
-          </p>
-      </div>
-      
     </div>
   </div>
 </div>
-<div class="row mt-2 g-0">
-  <div class="col-12  contact-button">
-    <a href="services.html" class="contact-link" title="See the services I offer">See the services I offer</a>
+
+
+
+<div class="top-line-title" id="work"></div>
+<div class="title" > <h1 class="title">What we do</h1></div>
+<div class="container intro-services">
+  <div class="row">
+    <div class="col-lg-1 col-md-1 col-2"><a href="/creative_services/logodesign.html"><img src="./../images/Creativeicon.png"
+          alt="Creative services pencil icon" class="service-icon" /></a></div>
+    <div class="col-lg-2 col-md-2 col-4"><a href="/creative_services/logodesign.html">Logo creation</a></div>
+    <div class="col-lg-1 col-md-1 col-2"><a href="/creative_services/marketingcollateral.html"><img src="./../images/Creativeicon.png"
+          alt="Creative services pencil icon" class="service-icon" /></a></div>
+    <div class="col-lg-2 col-md-2 col-4"> <a href="/creative_services/marketingcollateral.html">Marketing Collateral</a></div>
+    <div class="w-100 d-md-none"></div>
+    <div class="col-lg-1 col-md-1 col-2"><a href="/digital_marketing/digitalstrategy.html"><img src="./../images/DMicon.png"
+          alt="Digital marketing services phone icon" class="service-icon" /></a></div>
+    <div class="col-lg-2 col-md-2 col-4"><a href="/digital_marketing/digitalstrategy.html">Digital Marketing Strategy</a></div>
+    <div class="col-lg-1 col-md-1 col-2"><a href="/web_development/seo.html"><img src="./../images/WebDevicon.png"
+          alt="Web services screen icon" class="service-icon" /></a></div>
+    <div class="col-lg-2 col-md-2 col-4"><a href="/web_development/seo.html">Search Engine Optimisation</a></div>
+  </div>
+  <div class="row">
+    <div class="col-lg-1 col-md-1 col-2"><a href="/creative_services/brandstrategy.html"><img src="./../images/Creativeicon.png"
+          alt="Creative services pencil icon" class="service-icon" /></a></div>
+    <div class="col-lg-2 col-md-2 col-4"><a href="/creative_services/brandstrategy.html">Brand strategy</a></div>
+    <div class="col-lg-1 col-md-1 col-2"><a href="/creative_services/templates.html"><img src="./../images/Creativeicon.png"
+          alt="Creative services pencil icon" class="service-icon" /></a></div>
+    <div class="col-lg-2 col-md-2 col-4"><a href="/creative_services/templates.html">Presentation and Proposal</a></div>
+    <div class="w-100 d-md-none"></div>
+    <div class="col-lg-1 col-md-1 col-2"><a href="/web_development/webdesign.html"><img src="./../images/WebDevicon.png"
+          alt="Web services screen icon" class="service-icon" /></a></div>
+    <div class="col-lg-2 col-md-2 col-4"><a href="/web_development/webdesign.html">Web Design & Development</a></div>
+    <div class="col-lg-1 col-md-1 col-2"><a href="/web_development/websiteaudit.html"><img src="./../images/WebDevicon.png"
+          alt="Web services screen icon" class="service-icon" /></a></div>
+    <div class="col-lg-2 col-md-2 col-4"><a href="/web_development/websiteaudit.html">Website Performance Audit</a></div>
   </div>
 </div>
 <div class="top-line-title" id="work"></div>
-<div class="title" > <h1 class="title">Projects highlights</h1></div>
-<div class="bottom-line-title"></div>
-<div class="container-fluid ">
-  <div class="web-dev">
-  <div class="row mt-2 mb-1 h-100 ">
-    <div class="col-md-5">
-      <h3 class="work-type"> ◼ Web development</h3>
-      <h2 class="work-title mb-2 ">Weather app</h2>
-      <p class="work-desc mb-1">
-        Design and coding of a web app integrating API to provide live weather update.
-      </p>
-
+<div class="title">
+  <h1 class="title">Who are we</h1>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-4 col-xs-12">
+      <img src="./images/Mascot who am I.PNG" alt="Creafix Mascot who am I" class="img-fluid mx-auto d-block mascot">
     </div>
-    <div class="col-md-7 mt-2 mb-2 align-self-center ">
-     
-      <img src="images/Weather-app.png" alt="weather app image" class="img-fluid rounded mx-auto d-block img-thumbnail img-sample"/>
-    </div>
+    <div class="col-lg-7 col-xs-12">
+      <p class="bio">Creafix Design is a digital freelance agency directed by me, Audrey! I am based in Christchurch, New Zealand and operate
+      nationwide. For the last few years, we have worked with businesses around the Canterbury region across a range of
+      industries. We work with small and medium businesses make the most of their digital presence to help them thrive. We are
+      experts at building brand and digital marketing strategies alongside developing websites to convert your online visitors
+      into customers.<br>
+      We take time to get to know each business we work with to understand what make them who they are and what challenges they
+      are facing. This helps us provide the best bespoke solutions for each unique business. This flexibility also means that
+      we can take over your digital marketing completely on an on-going basis or simply land a hand when needed for a one-off
+      project.<br>
+      As a former engineer, it's probably no surprise that I like problem solving and efficient design. This is why we apply
+      the KISS (acronym for "Keep It Simple, Stupid") principle which helps prioritising tasks and implement projects more
+      efficiently. This helps our customers save time and money but also provides transparency to helps them understand what we
+      are doing for them.</p>
+      <div class="contact-button">
+        <a href="about.html" class="contact-link" title="Learn more about me">Learn more about us</a>
+      </div>
+           </div>
+       
+</div>
   </div>
-  </div></div>
+<div class="top-line-title" id="work"></div>
+<div class="title">
+  <h1 class="title">Why work with us</h1>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-4 col-xs-12 ">
+      <img src="./images/Mascot work with me.png" alt="Creafix Mascot why work with me?" class="img-fluid mx-auto d-block mascot">
+    </div>
+    <div class="col-lg-7 col-xs-12">
+      <p class="bio">Whether you've been in business for 2 or 20 years, you need visual communication and strategy that will make you reach
+      your ideal customers better and drive them to purchase your offering.<br/>
+      To keep the process simple, we like to start by reviewing the situation of your business and understand your goals and
+      the challenges you may have. This allows us to work side by side to identify the potential areas of improvement to
+      deliver the best action plan for maximising the effect of your digital tools.</p>
+      <ul>
+        <li class="bio-list">◼ One stop shop for a complete offer: all the services you need to maximise your digital marketing reach. You only have
+      one agency to deal with, and one bill to pay. This saves you time coordinating several contractors and reduces the risks
+      of miscommunication for the implementation of the strategy.</li>
+        <li class="bio-list"> ◼ Keep it simple: Running a business requires a lot of brain power and time; that's why we like to keep things as
+      straightforward as possible so that you can stay in the loop and understand what we are working on without having the
+      become an expert on the subject.</li>
+        <li class="bio-list">◼ Bespoke solutions for unique businesses: No two businesses are the same, that's why we spend the time to understand
+      your objectives and bring you solutions that are specific to your situation.</li>
+ 
+    </ul>
+    </div>
 <div class="container-fluid ">
-  <div class="print-dev">
-    <div class="row mt-3 mb-3  h-100">
-      <div class="col-md-5">
-        <h3 class="work-type"> ◼ Print design</h3>
-        <h2 class="work-title mb-2 ">Intech catalogue</h2>
-        <p class="work-desc mb-1">
-          Creation of a multi category product catalogue template.
-        </p>
+  <div class="testimonials">
+    <div class="row mt-2 mb-1 h-100">
+      <div class="col">
+        <div class="testimonial-title">
+          <h2>What people say</h2>
+        </div>
 
-      </div>
-      <div class="col-md-7 mt-2 mb-2 align-self-center ">
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+      aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+      aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+      aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner testimonial-content">
+    <div class="carousel-item active">
+      <p class="d-block w-100">"I worked with Audrey on some letterhead design and worksheet arrangement, and found her professional, efficient and
+      creative. She listened carefully to what I was after, and came up with solutions for what I was looking for. She got
+      back to me in a timely manner and when I wasn't getting time to get back with feedback, she suggested a meeting which
+      was much appreciated. I would work with her again for sure, it was great to get this small job ticked off and I'm
+      really pleased with the result. "<br/>
+      
+      ​— Anna, Physiotherapist @ Physio on Cashel </p>
+    </div>
+    
+      <div class="carousel-item">
+        <p class="d-block w-100">"Thanks Audrey,  Love your work!"
+        "That looks great!  Can't wait to use the bike template now!"<br/>
         
-          <img src="images/Intech catalogue.jpg" alt="catalogue template Intech image" class="img-fluid rounded mx-auto d-block img-thumbnail img-sample"   />
-        
+        — Jaques, Owner @ DISA Solutions Ltd </p>
       </div>
+      
+        <div class="carousel-item">
+          <p class="d-block w-100">"Big thanks to the Creafix team for working with us to creating our website."<br/>
+          
+          — Liam, Owner @ Batt Industry Ltd</p>
+        </div>
+    </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+      </div>
+
     </div>
   </div>
 </div>
-  <div class="container-fluid ">
-    <div class="web-dev">
-      <div class="row mt-3 mb-1 h-100">
-        <div class="col-md-5">
-          <h3 class="work-type"> ◼ Web development</h3>
-          <h2 class="work-title mb-2 ">Casting technology NZ new website</h2>
-          <p class="work-desc mb-1">
-            Design and creation of a website using CMS allowing easy clients updates using database for member management.
-          </p>
-  
-        </div>
-        <div class="col-md-7 mt-2 mb-2 align-self-center">
-        
-            <img src="images/CTNZ website-min.PNG" alt="Casting technology website image" class="img-fluid rounded mx-auto d-block img-thumbnail img-sample"  />
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-<div class="row mt-2 g-0">
-  <div class="col-12  contact-button">
-    <a href="mywork.html" class="contact-link" title="View my other projects">View more projects</a>
   </div>
 </div>
 
 <div class="top-line-title" id="contact"></div>
 <div class="title">
-  <h1 class="title">Contact me</h1>
+  <h1 class="title">Let's talk</h1>
 </div>
-<div class="bottom-line-title"></div>
-<div>
-  <a href="mailto:hello@creafixdesign.com" class="email-link" title="Email me"> hello@creafixdesign.com </a>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-4 col-xs-12">
+<img src="./images/Mascot lets talk.PNG" alt="Creafix Mascot let's talk" class="img-fluid mx-auto d-block mascot">
+</div>
+
+<div class="col-lg-8 col-xs-12">
+<form class="row g-3" action="">
+  <div class="col-md-6">
+    <div class="form-floating mb-1">
+      <input type="text" name="firstname" class="form-control" id="validationDefault01 floatingInput" placeholder="Firstname" required>
+      <label for="validationDefault01 floatingInput">First name</label>
+  </div>
+  </div>
+  <div class="col-md-6">
+    <div class="form-floating mb-1">
+      <input type="text" name="lastname" class="form-control" id="validationDefault02 floatingInput" placeholder="Lastname"required>
+      <label for="validationDefault02 floatingInput">Last name</label>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="form-floating mb-1">
+      <input type="email" name="email" class="form-control" id="validationDefault03 floatingInput" placeholder="name@example.com"required>
+      <label for="validationDefault03 floatingInput">Email address</label>
+    </div>
+  </div>
+  
+  <div class="col-md-6">
+  <div class="form-floating mb-1">
+    <input type="tel" name="phone" class="form-control" id="floatingInput" placeholder="Phone">
+    <label for="floatingInput">Phone</label>
+  </div>
+  </div>
+  <div class="col-12">
+    <div class="form-floating">
+      <textarea class="form-control" name="message" placeholder="Message" id="validationTextarea floatingTextarea" style="height: 150px" required></textarea>
+      <label for="validationTextarea floatingTextarea">Tell us what you're after.</label>
+    </div>
+  </div>
+ 
+ <!-- <div class="col-12">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="gridCheck">
+      <label class="form-check-label" for="gridCheck">
+        Check me out
+      </label>
+    </div>
+  </div>-->
+  <div class="g-recaptcha" data-sitekey="6Lel4Z4UAAAAAOa8LO1Q9mqKRUiMYl_00o5mXJrR">
+  </div>
+  <div class="col-12 contact-button">
+    <button type="submit" name="submit" class=" contact-link">Send</button>
+  </div>
+  
+</form>
+</div>
+  </div>
 </div>
 
 
 
 
-
-
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 <footer>
- <div class="social-links d-flex justify-content-center"> 
-<a href="https://www.facebook.com/creafixdesign" title="Facebook page"><i class="fab fa-facebook"></i></a>
-<a href="https://github.com/achevillat/audrey_portfolio.git" title="Github profile"><i class="fab fa-github"></i></a>
-<!--<a href="#"title="Instagram profile"><i class="fab fa-instagram"></i></a>-->
-<a href="https://www.linkedin.com/company/creafix-design"title="LinkdIn profile"><i class="fab fa-linkedin"></i></a>
-</div>
-  
+  <div class="container">
+    <div class="row">
+      <div class="col-2 logofooter">
+        <div class="d-none d-md-block"><img src="./../images/Icon small-min.png" alt="Creafix Design icon" class="">
+        </div>
+      </div>
+      <div class="col-md-auto email-footer">
+        <a href="mailto:hello@creafixdesign.com" class="email-link" title="Email me">Email us</a>
+        Christchurch, New Zealand
+      </div>
+    </div>
+
+
+  </div>
+  <div id="terms">
+    © 2022 by Creafix Design All Rights Reserved. | <a href="./privacypolicy.html">Privacy Policy</a> | <a
+      href="./websitetermofuse.html">Website Terms of Use</a>
+  </div>
+
 </footer>
 
 </html>
