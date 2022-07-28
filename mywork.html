@@ -2,12 +2,11 @@
 <html>
 
 <head>
-  <title>Check out my previous web development and garphic design projects - Creafix Design
-  </title>
+  <title>Our previous projects - Creafix Design </title>
 
   <meta charset="UTF-8" />
   <meta name="description"
-    content="Creafix Design has offered support to many businesses and build a wide portfolio of website developement and graphic design.">
+    content="Creafix Design has worked on a lot of projects in the past, contact us to be part of our future.">
 <link rel="icon" href="images/Icon small-min.png">
   <link href="src/styles.css" rel="stylesheet" type="text/css" />
   <!-- CSS only -->
@@ -53,20 +52,61 @@
 </head>
 
 <body>
-  <nav>
-    <ul class="menu">
+<nav>
+  <ul class="menu" id="navbar">
     <li class="logo"> <a href="index.html" title="Homepage logo"><img src="/images/Creafix logo white simple.png"
           alt="creafix design logo" width="150" /></a></li>
-    <li class="item"> <a href="index.html" title="Homepage">Home</a></li>
-    <li class="item"> <a href="index.html#about" title="About">About</a></li>
-    <li class="item"> <a href="mywork.html" title="My Work">Work</a></li>
-    <li class="item"> <a href="services.html" title="Services">Services</a></li>
+    <li class="item"> <a href="./../index.html" title="Homepage">Home</a></li>
+
+    <li class="nav-item dropdown item">
+      <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+        aria-expanded="false">
+        Creative Services
+      </a>
+      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <li><a class="dropdown-item" href="./../creative_services/brandstrategy.html">Branding Strategy</a></li>
+        <li><a class="dropdown-item" href="./../creative_services/logodesign.html">Logo Design</a></li>
+        <li><a class="dropdown-item" href="./../creative_services/marketingcollateral.html">Marketing material and
+            collateral</a></li>
+        <li><a class="dropdown-item" href="./../creative_services/templates.html">Presentation and proposal template</a>
+        </li>
+      </ul>
+    </li>
+    <li class="nav-item dropdown item">
+      <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+        aria-expanded="false">
+        Digital Marketing
+      </a>
+      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <li><a class="dropdown-item" href="./../digital_marketing/digitalstrategy.html">Digital Marketing Strategy</a>
+        </li>
+        <li><a class="dropdown-item" href="./../digital_marketing/smmanagement.html">Social Media Management</a></li>
+        <li><a class="dropdown-item" href="./../digital_marketing/websitemarketing.html">Website Marketing</a>
+        </li>
+        <li><a class="dropdown-item" href="./../digital_marketing/emailmarketing.html">Email Marketing</a></li>
+      </ul>
+    </li>
+    <li class="nav-item dropdown item">
+      <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+        aria-expanded="false">
+        Web Development
+      </a>
+      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <li><a class="dropdown-item" href="./../web_development/webdesign.html">Web Design</a></li>
+        <li><a class="dropdown-item" href="./../web_development/seo.html">Search Engine Optimisation (SEO)</a></li>
+        <li><a class="dropdown-item" href="./../web_development/landingpages.html">Landing Pages</a>
+        </li>
+        <li><a class="dropdown-item" href="./../web_development/websiteaudit.html">Website Audit</a></li>
+      </ul>
+    </li>
+    <li class="item"> <a href="./../mywork.html" title="My Work">Work</a></li>
+    <li class="item"> <a href="./../about.html" title="About">About</a></li>
     <li class="item"> <a href="index.html#contact" title="Contact me">Contact</a></li>
     <li class="toggle"> <span class="bars"></span></li>
-  
-  
-    </ul>
-  </nav>
+
+
+  </ul>
+</nav>
 
 <div class="top-line-title" id="about"></div>
 <div class="title">
@@ -215,10 +255,11 @@
       </div>
     </div>
   </div>
-<div class="row mt-2 g-0">
-  <div class="col-12  contact-button">
-    <a href="index.html#contact" class="contact-link" title="Contact me">Work with me</a>
+<div class="row mt-2 justify-content-center">
+  <div class="col-sm-3  work-button">
+    <a href="index.html#contact" class="contact-link " title="Contact me">Work with us</a>
   </div>
+  
 </div>
 
 
@@ -226,12 +267,24 @@
 
 </body>
 <footer>
-<div class="social-links d-flex justify-content-center">
-  <a href="https://www.facebook.com/creafixdesign" title="Facebook page"><i class="fab fa-facebook"></i></a>
-  <a href="https://github.com/achevillat/audrey_portfolio.git" title="Github profile"><i class="fab fa-github"></i></a>
-  <!--<a href="#"title="Instagram profile"><i class="fab fa-instagram"></i></a>-->
-  <a href="https://www.linkedin.com/company/creafix-design" title="LinkdIn profile"><i class="fab fa-linkedin"></i></a>
-</div>
+  <div class="container">
+    <div class="row">
+      <div class="col-2 logofooter">
+        <div class="d-none d-md-block"><img src="./../images/Icon small-min.png" alt="Creafix Design icon" class="">
+        </div>
+      </div>
+      <div class="col-md-auto email-footer">
+        <a href="mailto:hello@creafixdesign.com" class="email-link" title="Email me">Email us</a>
+        Christchurch, New Zealand
+      </div>
+    </div>
+
+
+  </div>
+  <div id="terms">
+    © 2022 by Creafix Design All Rights Reserved. | <a href="./privacypolicy.html">Privacy Policy</a> | <a
+      href="./websitetermofuse.html">Website Terms of Use</a>
+  </div>
 
 </footer>
 </html>
