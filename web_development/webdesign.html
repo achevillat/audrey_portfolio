@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>We create beautiful functional websites - Creafix Design </title>
+
+  <meta charset="UTF-8" />
+  <meta name="description"
+    content="Creafix Design extensive experience in building a large variety of websites for businesses.">
+  <link rel="icon" href="images/Icon small-min.png">
+  <link href="../src/styles.css" rel="stylesheet" type="text/css" />
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jura:wght@500&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Spinnaker&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <meta name="viewport" content="width-device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/b013160931.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script>
+    var num = 200; //number of pixels before modifying styles
+
+    $(window).bind("scroll", function () {
+      if ($(window).scrollTop() > num) {
+        $(".menu").addClass("fixed");
+      } else {
+        $(".menu").removeClass("fixed");
+      }
+    });
+
+    $(function () {
+      $(".toggle").on("click", function () {
+        if ($(".item").hasClass("active")) {
+          $(".item").removeClass("active");
+        }
+        else {
+          $(".item").addClass("active");
+        }
+      })
+    });
+
+  </script>
+</head>
+
+<body>
+  <nav>
+    <ul class="menu" id="navbar">
+      <li class="logo"> <a href="index.html" title="Homepage logo"><img src="/images/Creafix logo white simple.png"
+            alt="creafix design logo" width="150" /></a></li>
+      <li class="item"> <a href="./../index.html" title="Homepage">Home</a></li>
+  
+      <li class="nav-item dropdown item">
+        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+          aria-expanded="false">
+          Creative Services
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <li><a class="dropdown-item" href="./../creative_services/brandstrategy.html">Branding Strategy</a></li>
+          <li><a class="dropdown-item" href="./../creative_services/logodesign.html">Logo Design</a></li>
+          <li><a class="dropdown-item" href="./../creative_services/marketingcollateral.html">Marketing material and
+              collateral</a></li>
+          <li><a class="dropdown-item" href="./../creative_services/templates.html">Presentation and proposal template</a>
+          </li>
+        </ul>
+      </li>
+      <li class="nav-item dropdown item">
+        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+          aria-expanded="false">
+          Digital Marketing
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <li><a class="dropdown-item" href="./../digital_marketing/digitalstrategy.html">Digital Marketing Strategy</a>
+          </li>
+          <li><a class="dropdown-item" href="./../digital_marketing/smmanagement.html">Social Media Management</a></li>
+          <li><a class="dropdown-item" href="./../digital_marketing/websitemarketing.html">Website Marketing</a>
+          </li>
+          <li><a class="dropdown-item" href="./../digital_marketing/emailmarketing.html">Email Marketing</a></li>
+        </ul>
+      </li>
+      <li class="nav-item dropdown item">
+        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+          aria-expanded="false">
+          Web Development
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <li><a class="dropdown-item" href="./../web_development/webdesign.html">Web Design</a></li>
+          <li><a class="dropdown-item" href="./../web_development/seo.html">Search Engine Optimisation (SEO)</a></li>
+          <li><a class="dropdown-item" href="./../web_development/landingpages.html">Landing Pages</a>
+          </li>
+          <li><a class="dropdown-item" href="./../web_development/websiteaudit.html">Website Audit</a></li>
+        </ul>
+      </li>
+      <li class="item"> <a href="./../mywork.html" title="My Work">Work</a></li>
+      <li class="item"> <a href="./../about.html" title="About">About</a></li>
+      <li class="item"> <a href="index.html#contact" title="Contact me">Contact</a></li>
+      <li class="toggle"> <span class="bars"></span></li>
+  
+  
+    </ul>
+  </nav>
+
+  <div class="title">
+    <h1 class="title">Website Design & Development</h1>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col mb-3 align-self-center">
+        <img src="../images/coding.png" alt="laptop screen with lines of codes on dark background" class="service-image">
+      </div>
+      <div class="col">
+        <p class=" mb-1 bio">Not all business websites require the use of complex features or design. Before we start, we carry out an review of where you are
+        currently and where you're wanted to be in the short to long term to make a recommendation on the most suitable option
+        for your situation. We offer services ranging for fully custom coded websites to CMS build websites on Wix, SquareSpace
+        or Shopify for example. We take you through the entire process from creating the layout via wireframes to registering
+        your domain, hosting and publishing your website for the world to see. All webpages are optimised for best <a href="./../web_development/seo.html"> SEO ranking</a>
+        making it easier for your customers to find you. If you have an existing website we can also <a href="./../web_development/websiteaudit.html">review</a> it and make suggestions on how we can help.
+  
+          </br>
+          We can help you with:
+        </p>
+        <p class=" mb-1">
+        <ul>
+          <li class="bio-list">◼ Custom code</li>
+          <li class="bio-list">◼ WordPress</li>
+          <li class="bio-list">◼ Wix</li>
+          <li class="bio-list">◼ Squarespace</li>
+          <li class="bio-list">◼ Shopify</li>
+          <li class="bio-list">◼ UI/UX design</li>
+          <li class="bio-list">◼ Website architecture</li>
+          <li class="bio-list">◼ Sitemaps</li>
+          <li class="bio-list">◼ Domain name registration</li>
+          <li class="bio-list">◼ Webhosting</li>
+          <li class="bio-list">◼ Web page maintenance and updates</li>
+        </ul>
+  
+        </p>
+      </div>
+    </div>
+  </div>
+
+<div class="container creative-services">
+  <div class="row">
+    <div class="col-lg-1 col-md-1 col-2"><a href="/web_development/webdesign.html"><img src="../images/WebDevicon.png"
+          alt="Creative services pencil icon" class="service-icon" /></a></div>
+    <div class="col-lg-2 col-md-2 col-4"><a href="/web_development/webdesign.html">Web design & development</a></div>
+    <div class="col-lg-1 col-md-1 col-2"><a href="/web_development/seo.html"><img src="../images/WebDevicon.png"
+          alt="Creative services pencil icon" class="service-icon" /></a></div>
+    <div class="col-lg-2 col-md-2 col-4"> <a href="/web_development/seo.html">Search Engine Optimisation (SEO)</a></div>
+    <div class="w-100 d-md-none"></div>
+    <div class="col-lg-1 col-md-1 col-2"><a href="/web_development/landingpages.html"><img
+          src="../images/WebDevicon.png" alt="Creative services pencil icon" class="service-icon" /></a></div>
+    <div class="col-lg-2 col-md-2 col-4"><a href="/web_development/landingpages.html">Landing pages</a></div>
+    <div class="col-lg-1 col-md-1 col-2"><a href="/web_development/websiteaudit.html"><img
+          src="../images/WebDevicon.png" alt="Creative services pencil icon" class="service-icon" /></a></div>
+    <div class="col-lg-2 col-md-2 col-4"><a href="/web_development/websiteaudit.html">Website performance audit</a>
+    </div>
+  </div>
+</div>
+  
+  
+  </body>
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-2 logofooter">
+        <div class="d-none d-md-block"><img src="./../images/Icon small-min.png" alt="Creafix Design icon" class="">
+        </div>
+      </div>
+      <div class="col-md-auto email-footer">
+        <a href="mailto:hello@creafixdesign.com" class="email-link" title="Email me">Email us</a>
+        Christchurch, New Zealand
+      </div>
+    </div>
+
+
+  </div>
+  <div id="terms">
+    © 2022 by Creafix Design All Rights Reserved. | <a href="./privacypolicy.html">Privacy Policy</a> | <a
+      href="./websitetermofuse.html">Website Terms of Use</a>
+  </div>
+
+</footer>
+
+</html>

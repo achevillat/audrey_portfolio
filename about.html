@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Who are we - Creafix Design </title>
+  <meta charset="UTF-8" />
+  <meta name="description"
+    content="Creafix Design is based on a team of experts ready to help your business.">
+<link rel="icon" href="images/Icon small-min.png">
+  <link href="src/styles.css" rel="stylesheet" type="text/css" />
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jura:wght@500&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Spinnaker&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <meta name="viewport" content="width-device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/b013160931.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="main.js" defer></script>
+  <script>
+    var num = 200; //number of pixels before modifying styles
+
+    $(window).bind("scroll", function () {
+      if ($(window).scrollTop() > num) {
+        $(".menu").addClass("fixed");
+      } else {
+        $(".menu").removeClass("fixed");
+      }
+    });
+
+    $(function () {
+      $(".toggle").on("click", function () {
+        if ($(".item").hasClass("active")) {
+          $(".item").removeClass("active");
+        }
+        else {
+          $(".item").addClass("active");
+        }
+      })
+    });
+  
+  </script>
+</head>
+
+<body>
+<nav>
+  <ul class="menu" id="navbar">
+    <li class="logo"> <a href="index.html" title="Homepage logo"><img src="/images/Creafix logo white simple.png"
+          alt="creafix design logo" width="150" /></a></li>
+    <li class="item"> <a href="./../index.html" title="Homepage">Home</a></li>
+
+    <li class="nav-item dropdown item">
+      <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+        aria-expanded="false">
+        Creative Services
+      </a>
+      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <li><a class="dropdown-item" href="./../creative_services/brandstrategy.html">Branding Strategy</a></li>
+        <li><a class="dropdown-item" href="./../creative_services/logodesign.html">Logo Design</a></li>
+        <li><a class="dropdown-item" href="./../creative_services/marketingcollateral.html">Marketing material and
+            collateral</a></li>
+        <li><a class="dropdown-item" href="./../creative_services/templates.html">Presentation and proposal template</a>
+        </li>
+      </ul>
+    </li>
+    <li class="nav-item dropdown item">
+      <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+        aria-expanded="false">
+        Digital Marketing
+      </a>
+      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <li><a class="dropdown-item" href="./../digital_marketing/digitalstrategy.html">Digital Marketing Strategy</a>
+        </li>
+        <li><a class="dropdown-item" href="./../digital_marketing/smmanagement.html">Social Media Management</a></li>
+        <li><a class="dropdown-item" href="./../digital_marketing/websitemarketing.html">Website Marketing</a>
+        </li>
+        <li><a class="dropdown-item" href="./../digital_marketing/emailmarketing.html">Email Marketing</a></li>
+      </ul>
+    </li>
+    <li class="nav-item dropdown item">
+      <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+        aria-expanded="false">
+        Web Development
+      </a>
+      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <li><a class="dropdown-item" href="./../web_development/webdesign.html">Web Design</a></li>
+        <li><a class="dropdown-item" href="./../web_development/seo.html">Search Engine Optimisation (SEO)</a></li>
+        <li><a class="dropdown-item" href="./../web_development/landingpages.html">Landing Pages</a>
+        </li>
+        <li><a class="dropdown-item" href="./../web_development/websiteaudit.html">Website Audit</a></li>
+      </ul>
+    </li>
+    <li class="item"> <a href="./../mywork.html" title="My Work">Work</a></li>
+    <li class="item"> <a href="./../about.html" title="About">About</a></li>
+    <li class="item"> <a href="index.html#contact" title="Contact me">Contact</a></li>
+    <li class="toggle"> <span class="bars"></span></li>
+
+
+  </ul>
+</nav>
+<div class="top-line-title" id="about"></div>
+<div class="title">
+  <h1 class="title">Our team</h1>
+</div>
+<div class="container-fluid ">
+  <div class="about-box">
+    <div class="row mt-2 mb-1 h-100">
+      <div class="col-md-5"></div>
+      <div class="col-md-6 mb-4"> <h2>Audrey Chevillat - Creative Director</h2></div>
+    </div>
+    <div class="row mt-2 mb-1 h-100">
+      <div class="col-md-5">
+        <div class="bio-container">
+          <img src="images/Photo Profile.jpg" alt="profile picture" class="img-fluid rounded profile" />
+        </div>
+      </div>
+      <div class="col-md-7">
+        <p class="bio-highlight mb-1">
+          French born engineer turned visual designer and front end developer who's happy to call New Zealand home.</p>
+        <p class="bio mb-1">
+          I am passionate about design and digital technologies; I love to know how things work (hello engineering
+          brain!) but also make things functional for users and pleasing to the eye (hello creative brain!). Being able to combine
+          these two sides of my brain has been a revelation and encouraged me to start Creafix Design.
+          The desire to help businesses create media that helps promote brands, products and information to their
+          customers is the foundation or "raison de vivre" of Creafix Design.😃
+        <br/>
+          To acheive this, I associate with a trusted team of creative contractors such as Copywriters or Social Media Managers that provides support when needed to create the best bespoke solution for your business.
+        </p><br />
+        <p class="bio mb-1">
+          I have been working as a product designer for a number of years, focusing heavily on analysing problems and
+          identifying users needs.
+          This is the reason why I love getting to know my clients personally and being part of their projects or
+          business ideas as I believe it is the key to identifying the essence of their business and reaching out to their ideal
+          audience.
+        </p> <br />
+        <p class="bio mb-1">
+          I'm happiest when I'm creating, learning, exploring and thinking about how to make things better. Currently, I
+          am available to take on new work, feel free to reach out and say hello even if you haven't got a
+          project in mind yet!
+        </p><br />
+        <p class="bio mb-1">
+          We can help with creating beautiful functional websites, eye catching branding and graphics. Click below to
+          learn more.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+<div class="accordion">
+  
+<div class="accordion-item">
+<div class="accordion-item-header">
+<h4>Website Design & Development </h4>
+</div>
+<div class="accordion-item-body">
+  <div class="accordion-item-body-content">
+We design static and dynamic websites depending on requirements.<br/>
+ This service includes recommendation on whether a fully coded customised website is required or use of a CMS
+  platform is more suitable.
+  We take you through the entire process from creating the layout via wireframes to registering your domain, hosting
+  and publishing your website for the world to see.
+  We pay particular attention to optimising my designs for basic SEO, and we include strong considerations to the user
+  interface and experience (UI/UX).
+
+<div class="tools">
+  <h5> Skills & Tools</h5>
+<div class="row">
+  <div class="col-3 mb-3 p-0 center">
+    <img alt="HTML" class="img-fluid center block mb-2 pl-3 pr-3 rounded false img-tech"
+      src="/images/tools/html.png">
+    <small class="technology">
+      HTML
+    </small>
+  </div>
+  <div class="col-3 mb-3 p-0 center">
+    <img alt="CSS" class="img-fluid center block mb-2 pl-3 pr-3 rounded false img-tech"
+      src="/images/tools/css.png">
+    <small class="technology">
+      CSS
+    </small>
+  </div>
+<div class="col-3 mb-3 p-0 center">
+  <img alt="JavaScript" class="img-fluid center block mb-2 pl-3 pr-3 rounded false img-tech"
+    src="/images/tools/javascript.png">
+  <small class="technology">
+    JavaScript
+  </small>
+</div>
+  <div class="col-3 mb-3 p-0 center">
+    <img alt="Editor" class="img-fluid center block mb-2 pl-3 pr-3 rounded false img-tech"
+      src="/images/tools/editor.png">
+    <small class="technology">
+      Editor
+    </small>
+  </div>
+  <div class="col-3 mb-3 p-0 center">
+    <img alt="GitHub" class="img-fluid center block mb-2 pl-3 pr-3 rounded false img-tech"
+      src="/images/tools/github.png">
+    <small class="technology">
+      GitHub
+    </small>
+  </div>
+  <div class="col-3 mb-3 p-0 center">
+    <img alt="Bootstrap" class="img-fluid center block mb-2 pl-3 pr-3 rounded false img-tech"
+      src="/images/tools/bootstrap.png">
+    <small class="technology">
+      Bootstrap
+    </small>
+  </div>
+  <div class="col-3 mb-3 p-0 center">
+    <img alt="Hosting" class="img-fluid center block mb-2 pl-3 pr-3 rounded false img-tech"
+      src="/images/tools/hosting.png">
+    <small class="technology">
+      Hosting
+    </small>
+  </div>
+  <div class="col-3 mb-3 p-0 center">
+    <img alt="Flexbox" class="img-fluid center block mb-2 pl-3 pr-3 rounded false img-tech"
+      src="/images/tools/flexbox.png">
+    <small class="technology">
+      Flexbox
+    </small>
+  </div>
+  <div class="col-3 mb-3 p-0 center">
+    <img alt="SEO" class="img-fluid center block mb-2 pl-3 pr-3 rounded false img-tech"
+      src="/images/tools/seo.png">
+    <small class="technology">
+      SEO
+    </small>
+  </div>
+  <div class="col-3 mb-3 p-0 center">
+    <img alt="Responsive" class="img-fluid center block mb-2 pl-3 pr-3 rounded false img-tech"
+      src="/images/tools/responsive.png">
+    <small class="technology">
+      Responsive
+    </small>
+  </div>
+  <div class="col-3 mb-3 p-0 center">
+    <img alt="API" class="img-fluid center block mb-2 pl-3 pr-3 rounded false img-tech" src="/images/tools/api.png">
+    <small class="technology">
+      API
+    </small>
+  </div>
+    <div class="col-3 mb-3 p-0 center">
+      <img alt="Shopify" class="img-fluid center block mb-2 pl-3 pr-3 rounded false img-tech" src="/images/tools/shopify.png">
+      <small class="technology">
+        Shopify
+      </small>
+    </div>
+  <!--<div class="col-3 mb-3 p-0 center">
+    <img alt="React" class="img-fluid center block mb-2 pl-3 pr-3 rounded false img-tech"
+      src="/images/tools/react.png">
+    <small class="technology">
+      React
+    </small>
+  </div>-->
+</div>
+
+
+
+</div>
+
+  </div>
+</div>
+</div>
+<div class="accordion-item">
+  <div class="accordion-item-header">
+   <h4> Digital Graphics & Print Design</h4>  
+  </div>
+  <div class="accordion-item-body">
+    <div class="accordion-item-body-content">
+    We provide graphic design support by creating logo, branding and colour palette to put together a brand identity that best represents you.
+    We provide the branding guidelines along with business cards design or letterheads if needed. We also create catalogues, brochures/leaflets, flyers/posters to promote your business.
+    We can help you create graphics for prints or web use as well as infographics to suit your needs.
+    
+  <div class="tools">
+    <h5> Skills & Tools</h5>
+    <div class="row">
+      <div class="col-3 mb-3 p-0 center">
+        <img alt="Adobe inDesign" class="img-fluid center block mb-2 pl-3 pr-3 rounded false img-tech" src="/images/tools/indesign.svg">
+        <small class="technology">
+          inDesign
+        </small>
+      </div>
+      <div class="col-3 mb-3 p-0 center">
+        <img alt="Adobe Illustrator" class="img-fluid center block mb-2 pl-3 pr-3 rounded false img-tech" src="/images/tools/illustrator.svg">
+        <small class="technology">
+        Illustrator
+        </small>
+      </div>
+      <div class="col-3 mb-3 p-0 center">
+        <img alt="Adobe Photoshop" class="img-fluid center block mb-2 pl-3 pr-3 rounded false img-tech"
+          src="/images/tools/photoshop.svg">
+        <small class="technology">
+          Photoshop
+        </small>
+      </div>
+      <div class="col-3 mb-3 p-0 center">
+        <img alt="Adobe Fresco" class="img-fluid center block mb-2 pl-3 pr-3 rounded false img-tech"
+          src="/images/tools/mnemonic-Fresco-32x32.svg">
+        <small class="technology">
+          Fresco
+        </small>
+      </div>
+    <div class="col-3 mb-3 p-0 center">
+      <img alt="Adobe XD" class="img-fluid center block mb-2 pl-3 pr-3 rounded false img-tech"
+        src="/images/tools/xd.svg">
+      <small class="technology">
+        XD
+      </small>
+    </div>
+    <div class="col-3 mb-3 p-0 center">
+      <img alt="Adobe Acrobat DC" class="img-fluid center block mb-2 pl-3 pr-3 rounded false img-tech" src="/images/tools/acrobat_reader_appicon_noshadow_256.svg">
+      <small class="technology">
+        Acrobat DC
+      </small>
+    </div>
+    <div class="col-3 mb-3 p-0 center">
+      <img alt="Canva" class="img-fluid center block mb-2 pl-3 pr-3 rounded false img-tech"
+        src="/images/tools/canva.png">
+      <small class="technology">
+        Canva
+      </small>
+    </div>
+    </div>
+
+  </div>
+  
+  
+  </div>
+  </div>
+</div>
+  <div class="accordion-item">
+    <div class="accordion-item-header">
+      <h4> Social Media and Electronic Direct Mail (EDM)</h4>
+    </div>
+    <div class="accordion-item-body">
+      <div class="accordion-item-body-content">
+      We are confident using several social media platforms, creating content strategies and managing paid advertisement.
+      <div class="tools">
+        <h5> Skills & Tools</h5>
+        <div class="row">
+                  <div class="col-3 mb-3 p-0 center">
+            <img alt="Facebook" class="img-fluid center block mb-2 pl-3 pr-3 rounded false img-tech"
+              src="/images/tools/Facebook-color.svg">
+            <small class="technology">
+              Facebook
+            </small>
+          </div>
+          <div class="col-3 mb-3 p-0 center">
+            <img alt="Instagram" class="img-fluid center block mb-2 pl-3 pr-3 rounded false img-tech" src="/images/tools/Instagram-color.svg">
+            <small class="technology">
+              Instagram
+            </small>
+          </div>
+          <div class="col-3 mb-3 p-0 center">
+            <img alt="LinkedIn" class="img-fluid center block mb-2 pl-3 pr-3 rounded false img-tech"
+              src="/images/tools/LinkedIn-color.svg">
+            <small class="technology">
+              LinkedIn
+            </small>
+          </div>
+          <div class="col-3 mb-3 p-0 center">
+            <img alt="MailChimp" class="img-fluid center block mb-2 pl-3 pr-3 rounded false img-tech"
+              src="/images/tools/mailchimp.svg">
+            <small class="technology">
+              MailChimp
+            </small>
+          </div>
+      </div>
+    </div>
+      </div>
+</div>
+</div>
+<div class="accordion-item">
+  <div class="accordion-item-header">
+    <h4> Other</h4>
+  </div>
+  <div class="accordion-item-body">
+    <div class="accordion-item-body-content">
+   We can also help with creating simple motion graphics, packaging design and photo editing. 
+   Get in touch with your requirements to discuss how we can help.
+  </div>
+    </div>
+  </div>
+</div>
+
+<div class="row mt-2 justify-content-center">
+  
+  <div class="col-sm-3 work-button">
+    <a href="index.html#contact" class="contact-link " title="Contact me">Work with us</a>
+  </div>
+  </div>
+
+    </body>
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-2 logofooter">
+        <div class="d-none d-md-block"><img src="./../images/Icon small-min.png" alt="Creafix Design icon" class="">
+        </div>
+      </div>
+      <div class="col-md-auto email-footer">
+        <a href="mailto:hello@creafixdesign.com" class="email-link" title="Email me">Email us</a>
+        Christchurch, New Zealand
+      </div>
+    </div>
+
+
+  </div>
+  <div id="terms">
+    © 2022 by Creafix Design All Rights Reserved. | <a href="./privacypolicy.html">Privacy Policy</a> | <a
+      href="./websitetermofuse.html">Website Terms of Use</a>
+  </div>
+
+</footer>
+</html>
