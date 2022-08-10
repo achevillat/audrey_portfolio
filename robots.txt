@@ -1,0 +1,6 @@
+User-agent: Googlebot
+Disallow:/privacypolicy.html
+User-agent: Googlebot
+Disallow:/thankyou.html
+User-agent: Googlebot
+Disallow:/websitetermofuse.html
