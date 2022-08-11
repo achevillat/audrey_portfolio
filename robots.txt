@@ -7,8 +7,8 @@ Disallow:/websitetermofuse.html
 User-agent: Googlebot
 Disallow:/contact.html
 User-agent: Googlebot
-Disallow:/creative_services/index.html
+Disallow:/creative-services/index.html
 User-agent: Googlebot
-Disallow:/digital_marketing/index.html
+Disallow:/digital-marketing/index.html
 User-agent: Googlebot
-Disallow:/web_development/index.html
+Disallow:/web-development/index.html
