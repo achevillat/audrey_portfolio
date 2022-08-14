@@ -257,7 +257,7 @@ h1.title {
 .img-sample {
   width: 98% !important;
 }
-.who-we-are-box {
+.about-box {
   display: block;
   margin: 10px auto;
   width: 80%;
@@ -707,7 +707,7 @@ li.bio-list {
     font-weight: bold;
     margin: 50px auto;
   }
-  .who-we-are-box {
+  .about-box {
     width: 85%;
     background-color: white;
   }
@@ -800,7 +800,7 @@ li.bio-list {
     font-size: 16px;
   }
 
-  .who-we-are-box {
+  .about-box {
     width: 85%;
 
     background-color: white;
