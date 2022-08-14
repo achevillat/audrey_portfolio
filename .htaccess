@@ -2,3 +2,5 @@ Redirect 301 /contact.html/index.html#contact
 Redirect 301 /creative_services/index.html/creative_services/brandstrategy.html 
 Redirect 301 /digital_marketing/index.html/digital_marketing/digitalstrategy.html
 Redirect 301 /web_development/index.html/web_development/webdesign.html
+Redirect 301 /about.html/who-we-are.html
+Redirect 301 /mywork.html/our-previous-work.html
